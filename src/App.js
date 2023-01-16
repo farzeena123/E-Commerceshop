@@ -10,7 +10,7 @@ import Signup from './Components/Signup/Signup'
 import Products from './Components/Products/Products';
 import Checkout from './Components/Payment/Checkout'
 import OrderSuccess from './Components/Payment/OrderSuccess';
-import ProductDetails from './Components/Products/ProductDetails';
+
 
 
 
@@ -30,7 +30,6 @@ return (
       <Route exact path='/signup' component={Signup}><Signup/></Route>
       <Route exact path='/login'  component={Login} ><Login/></Route>
       <Route exact path='/products' component={Products} > <Products/></Route>
-      <Route exact path='/products/:id' component={ProductDetails} ></Route>
       <Route exact path='/checkout' component={Checkout}><Checkout/></Route>
       <Route exact path='/ordersuccess' component={OrderSuccess}><OrderSuccess/></Route>
      </Switch>

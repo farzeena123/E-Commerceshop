@@ -5,7 +5,6 @@ import {StarFill} from 'react-bootstrap-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {useCart} from 'react-use-cart';
 import {CartProvider} from 'react-use-cart';
-import { NavLink } from 'react-router-dom';
 import data from '../../Data'
 
 
@@ -33,7 +32,7 @@ function ItemCard() {
       return(
         <CartProvider>
     <Card key={item.id} className='card m-3 '  style={{ width: '18rem',backgroundColor:'beige', cursor:'pointer',marginBottom:'20px'}}>
-      <NavLink to={`/products/${item.id}`} ><Card.Img variant="top" src={item.img}  className='zoom' /></NavLink> 
+    <Card.Img variant="top" src={item.img}  className='zoom' /> 
     <Card.Body >
       <Card.Title>{item.title}</Card.Title>
       <Card.Text>
